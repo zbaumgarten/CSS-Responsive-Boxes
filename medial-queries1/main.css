@@ -1,3 +1,57 @@
+/* * {
+  border: 1px solid black;
+} */
+
+
 body {
   background: blanchedalmond;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.a {
+  min-height: 31vh;
+  background-color: red;
+  flex-grow: 5;
+  padding: 1em;
+}
+
+.b {
+  min-height: 31vh;
+  background-color: white;
+  flex-grow: 4;
+  padding: 1em;
+}
+.c {
+  min-height: 31vh;
+  background-color: green;
+  flex-grow: 1;
+  padding: 1em;
+}
+
+
+@media (min-width: 600px) {
+    .container{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .a {
+      width: 100%;
+    }
+
+    .b {
+      min-width: 60%;
+    }
+
+    .c {
+      min-width: 30%;
+    }
+
+}
+  
+

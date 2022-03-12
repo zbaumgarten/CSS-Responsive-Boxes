@@ -1,3 +1,132 @@
 body {
   background: peachpuff;
 }
+
+* {
+  border: 1px solid black;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  min-height: 10vh;
+  background-color: crimson;
+  flex-grow: 2;
+  
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.b {
+  min-height: 20vh;
+  background-color: blue;
+  flex-grow: 1;
+  width: 32%;
+  
+}
+
+.c {
+  min-height: 20vh;
+  background-color: goldenrod;
+  flex-grow: 1;
+  width: 32%;
+}
+
+.d {
+  min-height: 20vh;
+  background-color: darkmagenta;
+  flex-grow: 1;
+  width: 32%;
+}
+
+.e {
+  min-height: 20vh;
+  background-color: white;
+  flex-grow: 1;
+  width: 32%;
+}
+.f {
+  min-height: 20vh;
+  background-color: rgb(235, 38, 225);
+  flex-grow: 1;
+  width: 32%;
+}
+
+.g {
+  min-height: 20vh;
+  background-color: rgb(13, 228, 228);
+  flex-grow: 1;
+  width: 32%;
+}
+
+footer {
+  min-height: 35vh;
+  background-color: greenyellow;
+  flex-grow: 5;
+  
+}
+
+
+
+
+@media (min-width: 600px) {
+    .container{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    header {
+      width: 100%;
+      min-height: 30vh;
+    }
+
+    footer {
+      box-sizing: content-box;
+      width: 29%;
+      
+    }
+
+    aside {
+      width: 60%;
+    }
+
+    .b {
+      height: 35vh;
+      
+    }
+
+    .c {
+      height: 35vh;
+      
+    }
+    
+    .d {
+      height: 35vh;
+      
+    }
+    
+    .e {
+      height: 35vh;
+      
+    }
+    .f {
+      height: 35vh;
+      
+    }
+    .g {
+      height: 35vh;
+      
+    }
+
+}
